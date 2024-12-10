@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 2</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #7e7a7a;
+            font-weight: bold;
+        }
+        .container{
+            background-color: #f5f5f5;
+            width: 31.25em;
+            height: auto;
+            padding: 20px;
+            border-radius: 0.5em;
+            box-shadow: 0 0.25em 0.375em rgba(0, 0, 0, 0.1);
+        }
+        .container h1{
+            text-align: center;
+            position: relative;
+            bottom: 0.9em;
+            font-size: 1em;
+        }
+        h1 + p{
+            position: relative;
+            bottom: 2em;
+        }
+        .one{
+            display: flex;
+            flex-direction: column;
+            margin-top: 3.125em;
+            margin-bottom: 0.625em;
+            line-height: 2em;
+        }
+        .one img{
+            margin: 0 2em;
+        }
+        .rep button{
+            margin-top: 0.625em; 
+            padding: 0.5em 0.75em; background-color: #007bff; 
+            color: white; 
+            border: none; 
+            border-radius: 0.25em; cursor: pointer;
+        }
+        .rep input{
+            border-radius: 0.6em;
+            width: 14em;
+            aspect-ratio: 1/0.15;
+        }
+        .exist{
+            margin-top: 1em;
+            font-size: 0.75em;
+        }
+        .btn{
+            display: flex;
+            justify-content: right;
+        }
+
+        .btn > button{
+            margin: 0.6em;
+            width: 6.25em;
+            height: 1.5625em;
+            border-radius: 0.4375em;
+            margin-top: 3.125em;
+        }
+        .btn > .b1{
+            border: 2px solid #ff0000;
+            color: rgb(255, 0, 0);
+        }
+        .btn > .b2{
+            background-color: rgb(0, 102, 255);
+            border: rgb(0, 102, 255);
+            color: white;
+        }
+        img{
+            border-radius: 50%;
+        }
+        select{
+            width: 12em;
+            height: 2em;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f5;
+        }
+</style>
+</head>
+<body>
+    <div class="container">
+        <h1>Project 1</h1>
+        <p>Add Reports</p>
+        <label for="jobPosition">Report Name <span style="color: red;">*</span></label>
+        <div class="rep">
+            <select name="report-name" id="report-name">
+                <option value="" disabled selected>Report-Name</option>
+            </select>
+            <button>+ Add</button>
+        </div>
+        
+        <div class="exist">
+            <label for="Use Exiting report">Use Exiting report</label>
+            <input type="checkbox" name="checkbox" checked>
+        </div>
+        <div class="one">
+            <span>Report 1  <img src="red_cirle2.png" alt=""></span>
+            <span>Report 1  <img src="red_cirle2.png" alt=""></span>
+            <span>Report 1  <img src="red_cirle2.png" alt=""></span>
+            <span>Report 1  <img src="red_cirle2.png" alt=""></span>
+        </div>
+        <div class="btn">
+            <button class="b1" type="reset">Cancel</button>
+            <button class="b2" type="submit">Save</button>
+        </div>
+    </div>
+</body>
+</html>
